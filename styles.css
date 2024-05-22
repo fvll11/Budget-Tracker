@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.contenedor {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+}
+
+h1, h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.resumen-presupuesto, .formulario-transaccion, .lista-transacciones {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.resumen-presupuesto h2, .formulario-transaccion h2, .lista-transacciones h2 {
+    margin-top: 0;
+}
+
+.resumen-presupuesto > p {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.formulario-transaccion form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-transaccion input, .formulario-transaccion select {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.formulario-transaccion button {
+    padding: 10px;
+    background: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.formulario-transaccion button:hover {
+    background: #218838;
+}
+
+.lista-transacciones {
+    overflow-y: auto;
+    max-height: 200px; /* Puedes ajustar este valor según sea necesario */
+}
+
+
+.lista-transacciones ul {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-transacciones li {
+    background: #f8f8f8;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    word-wrap: break-word;
+}
+
+.lista-transacciones button {
+    background: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.lista-transacciones button:hover {
+    background: #c82333;
+}
+
+.lista-transacciones li .descripcion {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
